@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de sitio SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloFiltros.css">
+    <link rel="stylesheet" href="CSS/estilo1std.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Oscuro.css">
+    <link rel="icon" href="Img/Logo_farma.pngs" type="image/png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- link BOOTSTRAP 4.5.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" href="Img/Logo_farma.png" type="image/png" />
+    <title>Farmaceutica JP</title>
+</head>
+
+<body class="bodyL" id="body">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://es-la.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://google.com" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+    <header>
+        <div class="container-fluid Heady">
+            <h1>Farmaceutica JP</h1>
+            <nav id="menu">
+                <ul class="mainmenu">
+                    <li><a class="menu" href="index.html">INICIO</a></li>
+                    <li>|</li>
+                    <li><a class="menu" href="Proyectos.html">PROYECTOS</a></li>
+                    <li>|</li>
+                    <li><a class="menu" href="ProductosCarr2.html">PRODUCTOS Y SERVICIOS</a></li>
+                    <li>|</li>
+                    <li><a class="menu" href="Contacto.html">CONTACTO</a></li>
+                    <li>|</li>
+                    <li><a class="menu" href="Registro.html">REGISTRATE</a></li>
+                    <li>|</li>
+                    <li>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- START SECTION STORE -->
+    <div class="container containerL" id="Container">
+        <div class="main row Blanco" id="Blanco">
+            <section class="author-archive col-md-12">
+                <div class="Contenido1"><br>
+                    <h1 class="Title-Prod">PRODUCTOS Y SERVICIOS </h1>
+                    <input type="radio" id="All" name="categories" value="All" checked>
+                    <input type="radio" id="Medicamentos" name="categories" value="Medicamentos">
+                    <input type="radio" id="Productos" name="categories" value="Productos">
+                    <input type="radio" id="Administracion" name="categories" value="Administracion">
+                    <input type="radio" id="Servicios" name="categories" value="Servicios">
+
+                    <ol class="filters">
+                        <li>
+                            <label for="All">TODO</label>
+                        </li>
+                        <li>
+                            <label for="Medicamentos">Medicamentos</label>
+                        </li>
+                        <li>
+                            <label for="Productos">Productos</label>
+                        </li>
+                        <li>
+                            <label for="Administracion">Administracion de medicamentos</label>
+                        </li>
+                        <li>
+                            <label for="Servicios">Servicios</label>
+                        </li>
+                    </ol>
+
+                    <ol class="posts">
+                        <!--Medicamentos-->
+                        <li class="post" data-category="Medicamentos">
+
+                            <div class="item">
+                                <img class="item-image" src="Img/Medicamentos1.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Medicamentos 1</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Medicamentos 1</p>
+                                </h2>
+                                <div class="item-details"></div>
+                                <h4 class="item-price">
+                                    <p class="Precio"><b>450.000</b></p>
+                                </h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Medicamentos">
+                            <div class="item">
+                                <img class="item-image" src="Img/Medicamentos2.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Medicamentos 2</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Medicamentos 2</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>380.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Medicamentos">
+                            <div class="item">
+                                <img class="item-image" src="Img/Medicamentos3.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Medicamentos 3</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Medicamentos 3</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>400.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Productos-->
+
+                        <li class="post" data-category="Productos">
+                            <div class="item">
+                                <img class="item-image " src="Img/Productos1.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Productos 1</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Productos 1</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>650.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Productos">
+                            <div class="item">
+                                <img class="item-image " src="Img/Productos2.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Productos 2</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Productos 2</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>400.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Productos">
+                            <div class="item">
+                                <img class="item-image " src="Img/Productos3.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Productos 3</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Productos 3</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>600.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Productos">
+                            <div class="item">
+                                <img class="item-image " src="Img/Productos4.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Productos 4</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Productos 4</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>600.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Administracion-->
+
+                        <li class="post" data-category="Administracion">
+                            <div class="item">
+                                <img class="item-image" src="Img/Administracion.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Administracion de medicamentos 1</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Administracion de medicamentos 1</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>350.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Administracion">
+                            <div class="item">
+                                <img class="item-image " src="Img/Administracion.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Administracion de medicamentos 2</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Administracion de medicamentos 2</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>350.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Administracion">
+                            <div class="item">
+                                <img class="item-image " src="Img/Administracion.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Administracion de medicamentos 3</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Administracion de medicamentos 3</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>400.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="post" data-category="Administracion">
+                            <div class="item">
+                                <img class="item-image " src="Img/Administracion.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Administracion de medicamentos 4</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Administracion de medicamentos 14</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>500.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Servicios-->
+                        <li class="post" data-category="Servicios">
+                            <div class="item">
+                                <img class="item-image " src="Img/Servicios1.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Servicios 1</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Servicios 1</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>250.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="post" data-category="Servicios">
+                            <div class="item">
+                                <img class="item-image " src="Img/Servicios2.jpg"><br>
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Servicios 2</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Servicios 2</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>100.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </li>
+                </div>
+            </section>
+        </div>
+
+        <!-- END SECTION STORE -->
+        <!-- START SECTION SHOPPING CART -->
+        <div class="row Blanco2" id="Blanco2">
+            <section class="shopping-cart col-md-12">
+                <div class="container "><br><br>
+                    <h1 class="text-center">CARRITO</h1>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Producto</h6>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="shopping-cart-header ">
+                                <h6 class="text-truncate ">Precio</h6>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Cantidad</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ? START SHOPPING CART ITEMS -->
+                    <div class="shopping-cart-items shoppingCartItemsContainer ">
+                    </div>
+                    <!-- ? END SHOPPING CART ITEMS -->
+
+                    <!-- START TOTAL -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div class="shopping-cart-total d-flex align-items-center ">
+                                <p class="mb-0 ">Total</p>
+                                <p class="ml-4 mb-0 shoppingCartTotal ">0</p>
+                                <div class="toast ml-auto bg-info " role="alert " aria-live="assertive " aria-atomic="true " data-delay="2000 ">
+                                    <div class="toast-header ">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary ">Elemento en el carrito</strong>
+                                        <button type="button " class="ml-2 mb-1 close " data-dismiss="toast " aria-label="Close ">
+                                    <span aria-hidden="true ">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="toast-body text-white ">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+                                <button class="btn btn-success ml-auto comprarButton " type="button " onclick="BotonComprar();">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row Azulito">
+                <div class="col-xs-12 col-sm-8">
+                    <br><b>2022</b> <br>Todos los derechos reservados para Farmaceutica JP. &copy; <br> info@Farmaceutica JP.com
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <br> <br>Bogotá D.C. - Colombia <br>Teléfono 57 (1) 9-11
+                    <br>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row Blanco">
+                <div class="col-md-12">
+                    <center>
+                        <h5 class="designBy">
+                            Diseñado por: Juan Pablo Ruiz Rico
+                        </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <br><br>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="Js/Oscuro.js"></script>
+    <script src="Js/tienda.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
